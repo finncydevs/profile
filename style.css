@@ -1,0 +1,20 @@
+.text-primary {
+  color: #243642;
+}
+.text-secondary {
+  color: #629584;
+}
+
+.text-hitam {
+  color: #e2f1e7;
+}
+
+.text-background {
+  color: #e2f1e7;
+}
+
+body {
+  background-color: #E2F1E7;
+  font-family: 'Poppins', sans-serif;
+  color: #e2f1e7;
+}
