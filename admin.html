@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/e686fa0059.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Admin Page</title>
+  </head>
+
+  <body class="bg-gray-100">
+    <!-- Fasilitas Section -->
+    <section class="Fasilitas">
+      <div class="container mx-auto px-4 py-8">
+        <div class="text-slate-900 text-center py-3">
+          <h1 class="text-2xl font-bold">Admin Page</h1>
+          <p>Welcome to the admin page!</p>
+          <a href="index.html" class="text-blue-600 underline">Go to Home</a>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Card Fasilitas -->
+          <div
+            class="bg-white rounded-2xl shadow-xl overflow-hidden transition-transform transform hover:scale-105 hover:shadow-2xl"
+          >
+            <img
+              src="/src/kuma.jpeg"
+              alt="project.alt"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-extrabold text-primary">
+                Title Fasilitas
+              </h3>
+              <p class="text-gray-700 mt-2 leading-relaxed">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+          </div>
+
+          <!-- Plus Button Fasilitas -->
+          <div>
+            <div
+              class="bg-white rounded-2xl flex items-center justify-center h-full py-8 shadow hover:shadow-md"
+            >
+              <button
+                id="openModalFasilitasBtn"
+                class="text-4xl text-gray-800 hover:text-blue-600 transition"
+              >
+                <i class="fa-solid fa-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Profil Section -->
+    <section>
+      <div class="container mx-auto px-4 py-8">
+        <div class="rounded-2xl overflow-hidden">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-6">
+            <!-- Card Profil -->
+            <div
+              class="member-card bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col transition-transform transform hover:scale-105 hover:shadow-2xl"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+            >
+              <div
+                class="flex items-center p-6 gap-4 border-b border-slate-200"
+              >
+                <img
+                  src="/src/kuma.jpeg"
+                  alt="Jindan"
+                  class="h-16 w-16 rounded-full object-cover"
+                />
+                <div>
+                  <h2 class="text-lg font-extrabold text-indigo-800">Jindan</h2>
+                  <p class="text-xs text-primary font-semibold">
+                    FULL STACK DEVELOPER
+                  </p>
+                </div>
+                <div class="flex space-x-3 text-2xl text-secondary">
+                  <a
+                    href="https://wa.me/6281318510319"
+                    target="_blank"
+                    class="hover:text-indigo-800 transition"
+                  >
+                    <i class="fa fa-whatsapp"></i>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/finn.vue/"
+                    target="_blank"
+                    class="hover:text-indigo-800 transition"
+                  >
+                    <i class="fa fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Body -->
+              <div class="p-6 flex-1 flex flex-col">
+                <p class="text-gray-700 flex-1 leading-relaxed">
+                  I found solution to all my design needs from Creative Tim...
+                </p>
+                <button
+                  class="mt-6 self-center w-full py-3 bg-gradient-to-r from-emerald-900 to-emerald-400 text-white font-semibold rounded-lg transition-transform transform hover:scale-105 open-modal"
+                  data-member="1"
+                >
+                  Lihat Profil
+                </button>
+              </div>
+            </div>
+
+            <!-- Plus Button Profil -->
+            <div
+              class="flex items-center bg-white shadow-lg rounded-lg justify-center border-b pb-4 border-slate-200"
+            >
+              <button
+                id="openModalProfilBtn"
+                class="text-4xl text-gray-800 hover:text-blue-600 transition"
+              >
+                <i class="fa-solid fa-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal Tambah Fasilitas -->
+    <div
+      id="modalFasilitas"
+      class="fixed inset-0 z-50 hidden items-center justify-center bg-black bg-opacity-50"
+    >
+      <div class="bg-white p-6 rounded-lg shadow-xl w-full max-w-md">
+        <div class="flex justify-between items-center mb-4">
+          <h2 class="text-xl font-bold">Tambah Fasilitas</h2>
+          <button id="closeModalFasilitasBtn" class="text-gray-500 text-2xl">
+            &times;
+          </button>
+        </div>
+        <form>
+          <div class="mb-4">
+            <label class="block text-gray-700">Nama Fasilitas</label>
+            <input type="text" class="w-full px-3 py-2 border rounded-md" />
+          </div>
+          <div class="mb-4">
+            <label class="block text-gray-700">Deskripsi</label>
+            <textarea
+              class="w-full px-3 py-2 border rounded-md"
+              rows="3"
+            ></textarea>
+          </div>
+          <div class="mb-4">
+            <label class="block text-gray-700">Foto</label>
+            <input type="file" class="w-full" />
+          </div>
+          <button
+            type="submit"
+            class="bg-blue-600 text-white px-4 py-2 rounded"
+          >
+            Simpan
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Modal Tambah Profil -->
+    <div
+      id="modalProfil"
+      class="fixed inset-0 z-50 hidden items-center justify-center bg-black bg-opacity-50"
+    >
+      <div class="bg-white p-6 rounded-lg shadow-xl w-full max-w-md">
+        <div class="flex justify-between items-center mb-4">
+          <h2 class="text-xl font-bold">Tambah Profil</h2>
+          <button id="closeModalProfilBtn" class="text-gray-500 text-2xl">
+            &times;
+          </button>
+        </div>
+        <form>
+          <div class="mb-4">
+            <label class="block text-gray-700">Nama</label>
+            <input type="text" class="w-full px-3 py-2 border rounded-md" />
+          </div>
+          <div class="mb-4">
+            <label class="block text-gray-700">Jabatan</label>
+            <input type="text" class="w-full px-3 py-2 border rounded-md" />
+          </div>
+          <div class="mb-4">
+            <label class="block text-gray-700">Foto</label>
+            <input type="file" class="w-full" />
+          </div>
+          <div class="mb-4">
+            <label class="block text-gray-700">WhatsApp</label>
+            <input type="text" class="w-full px-3 py-2 border rounded-md" />
+          </div>
+          <div class="mb-4">
+            <label class="block text-gray-700">Instagram</label>
+            <input type="text" class="w-full px-3 py-2 border rounded-md" />
+          </div>
+          <div class="mb-4">
+            <label class="block text-gray-700">Profil</label>
+            <input type="text" class="w-full px-3 py-2 border rounded-md" />
+          </div>
+          <button
+            type="submit"
+            class="bg-green-600 text-white px-4 py-2 rounded"
+          >
+            Tambah Profil
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Script -->
+    <script>
+      const modalFasilitas = document.getElementById("modalFasilitas");
+      const modalProfil = document.getElementById("modalProfil");
+
+      // Fasilitas modal
+      document.getElementById("openModalFasilitasBtn").onclick = () => {
+        modalFasilitas.classList.remove("hidden");
+        modalFasilitas.classList.add("flex");
+      };
+      document.getElementById("closeModalFasilitasBtn").onclick = () => {
+        modalFasilitas.classList.remove("flex");
+        modalFasilitas.classList.add("hidden");
+      };
+
+      // Profil modal
+      document.getElementById("openModalProfilBtn").onclick = () => {
+        modalProfil.classList.remove("hidden");
+        modalProfil.classList.add("flex");
+      };
+      document.getElementById("closeModalProfilBtn").onclick = () => {
+        modalProfil.classList.remove("flex");
+        modalProfil.classList.add("hidden");
+      };
+
+      // Close modal
+      window.addEventListener("click", (e) => {
+        if (e.target === modalFasilitas) {
+          modalFasilitas.classList.remove("flex");
+          modalFasilitas.classList.add("hidden");
+        }
+        if (e.target === modalProfil) {
+          modalProfil.classList.remove("flex");
+          modalProfil.classList.add("hidden");
+        }
+      });
+    </script>
+  </body>
+</html>
