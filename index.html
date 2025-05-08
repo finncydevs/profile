@@ -12,38 +12,38 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Document</title>
   </head>
-  <body class="bg-">
+  <body>
     <header>
-      <nav class="bg-bg shadow-md py-4 px-6 flex justify-between items-center">
-        <div class="text-2xl font-bold text-primary">Fische</div>
+      <nav class="bg-color shadow-md py-4 px-6 flex justify-between items-center">
+        <div class="text-2xl font-bold text-white">Fische</div>
         <div class="hidden md:flex space-x-6">
           <a
             href="#Visi"
-            class="text-primary text-lg font-bold cursor-pointer hover:text-xl"
+            class="text-white text-lg font-bold cursor-pointer hover:text-xl"
             >Visi Misi</a
           >
           <a
             href="#Fasilitas"
-            class="text-primary text-lg font-bold cursor-pointer hover:text-xl"
+            class="text-white text-lg font-bold cursor-pointer hover:text-xl"
             >Fasilitas</a
           >
           <a
             href="#Anggota"
-            class="text-primary text-lg font-bold cursor-pointer hover:text-xl"
+            class="text-white text-lg font-bold cursor-pointer hover:text-xl"
             >Anggota</a
           >
         </div>
         <button
-          class="md:block inline-block px-3 py-2 bg-gradient-to-r text-white from-indigo-400 to-indigo-800 font-semibold rounded-lg transition-transform transform hover:scale-105"
+          class="md:block inline-block px-2 py-1 bg-gradient-to-r text-white from-indigo-600 to-indigo-800 font- rounded-lg text-sm transition-transform transform hover:scale-105"
         >
-          Contact Us
+          <a href="admin.html">Login Admin</a>
         </button>
       </nav>
     </header>
 
-    <section id="home" class="pt-10 pb-10 bg-bg">
+    <section class="hero w-scren pt-10 min-h-screen pb-10 ">
       <div
-        class="w-full px-4 sm:px-6 md:px-10 flex flex-col-reverse lg:flex-row items-center"
+        class="w-screen px-4 sm:px-6 md:px-10 flex flex-col-reverse lg:flex-row items-center"
       >
         <!-- Text Column -->
         <div
@@ -51,37 +51,59 @@
           data-aos="fade-right"
           data-aos-duration="1300"
         >
-          <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-primary">
+          <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white">
             Wujudkan semuanya dengan kami.
           </h1>
-          <p class="text-secondary text-base md:text-lg font-medium">
+          <p class="text-slate-200 text-base md:text-lg font-medium">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
             accusantium soluta quae voluptas officia labore recusandae nemo
             officiis nulla quos sed, consectetur quidem asperiores commodi eum
             neque ea unde iste!
-            <b class="text-primary font-bold">Learn!</b>
+            <b class="text-white font-bold">Learn!</b>
           </p>
-        </div>
-
-        <!-- Image Column -->
-        <div
-          class="w-full lg:w-1/2 mb-8 lg:mb-0 flex justify-center lg:justify-end"
-          data-aos="fade-left"
-          data-aos-duration="1300"
-        >
-          <img
-            class="w-full max-w-xl object-cover rounded-lg"
-            src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/eaboutus1.svg"
-            alt="Illustrasi"
-          />
         </div>
       </div>
     </section>
-    <section id="Misi" class="bg-bg py-16 px-4">
+    <section class="bg-color">
+
+      <div class="max-w-7xl bg-color mx-auto  space-y-24">
+        <!-- Our Mission Kartu -->
+        <div
+          class="flex flex-col-reverse md:flex-row items-center rounded-2xl  overflow-hidden"
+          data-aos="fade-up"
+          data-aos-duration="1200"
+        >
+          <!-- Text -->
+          <div class="w-full md:w-1/2 p-6 md:p-12">
+            <h3 class="text-3xl lg:text-4xl font-extrabold text-white mb-4">
+              Sambutan
+            </h3>
+            <p class="text-xl font-semibold text-slate-200 mb-4">
+              Mewujudkan Bangsa Yang Jujur
+            </p>
+            <p class="text-gray-700 mb-6 leading-relaxed text-slate-200">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum
+              pulvinar ullamcorper suspendisse ac eget. Pellentesque tempus leo
+              in ullamcorper quis vestibulum ligula elementum ut.
+            </p>
+          </div>
+
+          <!-- image -->
+          <div class="w-full md:w-1/2">
+            <img
+              src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/eaboutus1.svg"
+              alt="Our Mission Illustration"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+    </section>
+
+    <section id="Misi" class="bg-color py-16 px-4">
       <div class="max-w-7xl mx-auto space-y-24">
         <!-- Our Mission Kartu -->
         <div
-          class="flex flex-col-reverse md:flex-row items-center bg-white  rounded-2xl shadow-lg overflow-hidden"
+          class="flex flex-col-reverse md:flex-row items-center bg-white rounded-2xl shadow-lg overflow-hidden"
           data-aos="fade-up"
           data-aos-duration="1200"
         >
@@ -98,11 +120,6 @@
               pulvinar ullamcorper suspendisse ac eget. Pellentesque tempus leo
               in ullamcorper quis vestibulum ligula elementum ut.
             </p>
-            <button
-              class="inline-block px-6 py-3 bg-gradient-to-r from-indigo-400 to-indigo-800 text-white font-semibold rounded-lg transition-transform transform hover:scale-105"
-            >
-              Explore
-            </button>
           </div>
 
           <!-- image -->
@@ -134,11 +151,6 @@
               pulvinar ullamcorper suspendisse ac eget. Pellentesque tempus leo
               in ullamcorper quis vestibulum ligula elementum ut.
             </p>
-            <button
-              class="inline-block px-6 py-3 bg-gradient-to-r from-indigo-400 to-indigo-800 text-white font-semibold rounded-lg transition-transform transform hover:scale-105"
-            >
-              Explore
-            </button>
           </div>
 
           <!-- Image -->
@@ -154,13 +166,13 @@
     </section>
 
     <!-- Fasilitas -->
-    <section id="Fasilitas" class="bg-bg py-12 px-4">
+    <section id="Fasilitas" class="bg-color py-12 px-4">
       <div class="max-w-7xl mx-auto">
         <div class="text-center mb-12">
-          <h2 class="text-3xl lg:text-4xl font-bold text-primary mt-2">
-            Fasilitas
+          <h2 class="text-3xl lg:text-4xl font-bold text-white mt-2">
+            Title
           </h2>
-          <p class="text-md text-primary mt-3">Fasilitas yang ada di X</p>
+          <p class="text-md text-white mt-3">Sub Titel X</p>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -179,7 +191,7 @@
 
             <div class="p-6">
               <h3 class="text-xl font-extrabold text-primary">
-                Title Fasilitas
+                Title 
               </h3>
               <p class="text-gray-700 mt-2 leading-relaxed">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -192,7 +204,7 @@
     </section>
 
     <!-- anggota -->
-    <section id="Anggota" class="bg-bg py-12 px-4">
+    <!-- <section id="Anggota" class="bg-bg py-12 px-4">
       <div class="text-center mb-12">
         <h2 class="text-3xl lg:text-4xl font-bold text-primary mt-2">
           Anggota
@@ -203,7 +215,6 @@
         class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         id="team-members"
       >
-        <!-- Menambahkan anggota lain disini -->
         <div
           class="bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col member-card transition-transform transform hover:scale-105 hover:shadow-2xl"
           data-aos="fade-up"
@@ -239,7 +250,6 @@
             </div>
           </div>
 
-          <!-- Body -->
           <div class="p-6 flex-1 flex flex-col">
             <p class="text-gray-700 flex-1 leading-relaxed">
               I found solution to all my design needs from Creative Tim...
@@ -252,10 +262,8 @@
             </button>
           </div>
         </div>
-        <!-- Menambahkan  -->
       </div>
 
-      <!-- Modal Overlay -->
       <div
         id="modal-overlay"
         class="fixed inset-0 py-2 flex items-center justify-center z-50 hidden"
@@ -276,17 +284,17 @@
           <p id="modal-description" class="text-gray-700 leading-relaxed"></p>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- map ganti sesuai dengan lokasi x -->
-    <div class="p-8 shadow-lg bg-bg min-h-screen flex flex-col items-center">
-      <h1 class="text-3xl text-primary font-bold mb-1">Lokasi</h1>
-      <p class="mb-6 text-secondary">Kami Bersekolah di</p>
+    <div class="p-8 shadow-lg bg-color min-h-screen flex flex-col items-center">
+      <h1 class="text-3xl text-white font-bold mb-1">Lokasi</h1>
+      <p class="mb-6 text-slate-200">Kami Bersekolah di</p>
       <div
-        class="flex flex-col md:flex-row w-full max-w-4xl shadow-lg rounded-lg overflow-hidden"
+        class="flex flex-col md:flex-row w-1/2 max-w-4xl shadow-lg rounded-lg overflow-hidden"
       >
         <div
-          class="bg-primary text-seconndary p-10 flex-1 flex flex-col justify-center items-center"
+          class="bg-white text-seconndary p-10 flex-1 flex flex-col justify-center items-center"
         >
           <h2 class="text-2xl font-semibold text-bg">Indonesia</h2>
           <p class="mt-2 text-center">
@@ -386,31 +394,7 @@
     <script>
       AOS.init();
       // tambahkan anggota lain disini
-      const teamGroup = [
-        {
-          id: 1,
-          profile: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        },
-      ];
-
-      document.querySelectorAll(".open-modal").forEach((button) => {
-        button.addEventListener("click", (event) => {
-          const memberId = event.target.getAttribute("data-member");
-          const member = teamGroup.find((member) => member.id == memberId);
-
-          if (member) {
-            document.getElementById("modal-title").textContent = member.name;
-            document.getElementById("modal-description").textContent =
-              member.profile;
-            document.getElementById("modal-overlay").classList.remove("hidden");
-          }
-        });
-      });
-
-      // penutupan modal
-      document.getElementById("close-modal").addEventListener("click", () => {
-        document.getElementById("modal-overlay").classList.add("hidden");
-      });
+      
     </script>
   </body>
 </html>

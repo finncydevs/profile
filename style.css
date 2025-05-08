@@ -4,7 +4,9 @@
 .text-secondary {
   color: #629584;
 }
-
+body,
+html {
+}
 .text-hitam {
   color: #e2f1e7;
 }
@@ -13,8 +15,22 @@
   color: #e2f1e7;
 }
 
+.bg-color {
+  background-color: #0d6ffc;
+}
+
+.hero {
+  background-image: url("src/bromo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 body {
-  background-color: #E2F1E7;
-  font-family: 'Poppins', sans-serif;
-  color: #e2f1e7;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
 }
